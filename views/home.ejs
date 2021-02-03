@@ -1,0 +1,52 @@
+<%- include('partials/header'); %>
+
+<div class="welcome">
+  <h1>Welcome</h1>
+  <p>Explore movies now.</p>
+
+  <form action="/" method="post">
+    <div class="input-group">
+      <input type="text" class="form-control" name="search" id="inputValue" />
+      <div class="input-group-append">
+        <button class="btn" type="submit">Search</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="main">
+  <h2>Coming soon</h2>
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="movies">
+        <% upcomingMovies.map(function(movie){ %> <% if(movie.poster_path &&
+        !movie.adult){ %>
+        <div class="movie">
+          <a href="/movies/<%= movie.id %>">
+            <img
+              src="https://image.tmdb.org/t/p/w500/<%= movie.poster_path %>"
+              alt="movie poster"
+            />
+          </a>
+
+          <a class="movie-title" href="/movies/<%= movie.id %>">
+            <%= movie.title %>
+          </a>
+        </div>
+        <%}})%>
+      </div>
+      <div class="pages">
+        <a class="page-number" href=""><</a>
+        <% for(let i = 1; i<= pages; i++){ %>
+        <div class="page">
+          <a class="page-number" href="/page<%=i%>"><%= i %></a>
+        </div>
+        <%}%>
+        <a class="page-number" href="">></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<%- include('partials/footer'); %>

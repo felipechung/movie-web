@@ -1,0 +1,104 @@
+.movie-content {
+    display: flex;
+}
+
+.movie-text {
+    padding: 3rem;
+}
+
+.movie-poster {
+    height: 400px;   
+}
+
+.movie-poster {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: .9rem;
+    line-height: 1.8;
+}
+
+span {
+    font-weight: 300;
+    font-size: 1.6rem;    
+}
+
+.tagline {
+    font-weight: 300;
+    font-size: .9rem;
+    font-style: italic;
+    margin-bottom: .9rem;
+}
+
+.movie-info {
+    display: flex;
+}
+
+.info-item {
+    margin-right: .9rem;
+}
+
+h3 {
+    font-size: 1.4rem ;
+    font-weight: 600;
+}
+
+.swiper-container {
+    max-width: 1200px;
+    height: 300px;
+}
+
+  .swiper-slide {
+    flex-wrap: wrap;
+    /* text-align: center;    
+    Center slide text vertically
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; */
+  }
+
+
+  /* .swiper-button-next,
+  .swiper-button-prev {
+        right:10px;
+      color: rgb(19, 64, 119, 0.84) !important;
+      fill: black !important;
+      stroke: black !important;
+  } */
+
+.bottom {
+    margin-top: 2rem;
+}
+.cast-img {
+    height: 200px;    
+    margin-bottom: .7rem;    
+}
+
+.cast-text {
+    font-size: .9rem;
+    margin: 0;
+    overflow-wrap: break-word;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.cast-card {
+
+    
+    
+    
+}
