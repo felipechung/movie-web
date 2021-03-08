@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const axios = require("axios");
@@ -10,7 +11,7 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //API KEY
-const apiKey = "0215c777de32c6e712cdaea95f471c8b";
+const apiKey = process.env.API_KEY;
 
 app.get("/", function (req, res) {
   axios
